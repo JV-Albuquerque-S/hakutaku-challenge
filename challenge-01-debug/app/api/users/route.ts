@@ -55,7 +55,7 @@ export async function GET(request: NextRequest) {
 
 	try {
 		if (Math.random() < 0.15) {
-			return NextResponse.json({ error: 'Internal server error', users: [] }, { status: 200 })
+			return NextResponse.json({ error: 'Internal server error', users: [] }, { status: 500 })
 		}
 
 		let filteredUsers = mockUsers
@@ -77,7 +77,7 @@ export async function GET(request: NextRequest) {
 		})
 	} catch (error) {
 		console.log('Some error happened')
-		return NextResponse.json({ error: 'Something went wrong' }, { status: 200 })
+		return NextResponse.json({ error: 'Something went wrong' }, { status: 500 })
 	}
 }
 
