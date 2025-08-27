@@ -12,7 +12,7 @@ export default function TeamDashboard() {
 	const [lastUpdate, setLastUpdate] = useState<string>('')
 	const [windowWidth, setWindowWidth] = useState(0)
 
-	const fetchUsers = async () => {
+	const fetchUsers = useCallback(async () => {
 		setLoading(true)
 		setError('')
 
@@ -28,7 +28,7 @@ export default function TeamDashboard() {
 		} finally {
 			setLoading(false)
 		}
-	}
+	}, [selectedDepartment])
 
 	useEffect(() => {
 		fetchUsers()
