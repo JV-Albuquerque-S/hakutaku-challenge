@@ -121,6 +121,7 @@ export default function TeamDashboard() {
 				<div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: '15px' }}>
 					{users.map((user) => (
 						<div
+							key={user.id}
 							style={{
 								padding: '15px',
 								border: selectedUser?.id === user.id ? '2px solid #007bff' : '1px solid #ddd',
