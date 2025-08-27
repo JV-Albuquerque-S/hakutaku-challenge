@@ -6,7 +6,7 @@ import { User, ApiResponse } from './types'
 export default function TeamDashboard() {
 	const [users, setUsers] = useState<User[]>([])
 	const [loading, setLoading] = useState<boolean>(false)
-	const [selectedUser, setSelectedUser] = useState<User | null>()
+	const [selectedUser, setSelectedUser] = useState<User | null>(null)
 	const [error, setError] = useState<string>('')
 	const [selectedDepartment, setSelectedDepartment] = useState<string>('')
 	const [lastUpdate, setLastUpdate] = useState<string>('')
