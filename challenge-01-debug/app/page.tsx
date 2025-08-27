@@ -38,6 +38,7 @@ export default function TeamDashboard() {
 		}
 		window.addEventListener('resize', handleResize)
 		handleResize()
+		return () => window.removeEventListener('resize', handleResize)
 	}, [fetchUsers])
 
 	const handleUserSelect = (user: User) => {
