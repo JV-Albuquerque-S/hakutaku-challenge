@@ -1,0 +1,36 @@
+.tagContainer {
+    margin-bottom: 20px;
+}
+
+.label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.tagList {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-top: 8px;
+}
+
+.tagButton {
+    padding: 4px 12px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    background: white;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+}
+
+.tagButton.selected {
+    border-color: #007bff;
+    background: #e7f3ff;
+    font-weight: bold;
+}
+
+.tagButton:hover {
+    border-color: #007bff;
+}

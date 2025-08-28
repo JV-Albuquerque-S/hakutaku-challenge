@@ -1,0 +1,24 @@
+.controlsContainer {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.label {
+    margin-right: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+.input, .select {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.input {
+    width: 250px;
+}
